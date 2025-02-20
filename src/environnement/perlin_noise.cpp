@@ -15,10 +15,6 @@ double Vector2D::getY(){
     return this->y;
 }
 
-
-
-
-
 double randomDouble(double a, double b) {
     double t {(double)(std::rand())/(double)RAND_MAX}; //random number between 0 and 1
     return a+(b-a)*t;

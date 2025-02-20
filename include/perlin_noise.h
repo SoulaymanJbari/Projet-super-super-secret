@@ -17,6 +17,6 @@ public:
 
 Vector2D randomUnitVector();
 double smoothstep(double x);
-double randomDouble(double a, double b); // generate random number (double) between a and b
+double randomDouble(double a, double b);
 
 #endif /* PERLIN_NOISE_H */
