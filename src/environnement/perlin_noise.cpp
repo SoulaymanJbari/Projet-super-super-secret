@@ -32,3 +32,23 @@ Vector2D randomUnitVector() {
     double y {sin(theta)};
     return Vector2D(x, y);
 }
+
+Perlin::Perlin(){
+    for (int i=0;i<11;i++){
+        for (int j=0;j<11;j++){
+            this->grille[i][j] = Vector2D(0,0);
+        }
+    }
+}
+
+void Perlin::grille_init(){
+    for (int i=0;i<11;i++){
+        for (int j=0;j<11;j++){
+            this->grille[i][j] = randomUnitVector();
+        }
+    }
+}
+
+Vector2D Perlin::get_grille(int x,int y){
+    return this->grille[x][y];
+}

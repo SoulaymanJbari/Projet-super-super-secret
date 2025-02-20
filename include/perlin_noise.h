@@ -19,4 +19,12 @@ Vector2D randomUnitVector();
 double smoothstep(double x);
 double randomDouble(double a, double b);
 
+class Perlin {
+    private:
+        Vector2D grille[11][11];
+    public:
+        Perlin();
+        void grille_init();
+        Vector2D get_grille(int x, int y);
+};
 #endif /* PERLIN_NOISE_H */
