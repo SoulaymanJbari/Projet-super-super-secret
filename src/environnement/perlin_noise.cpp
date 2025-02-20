@@ -1,5 +1,24 @@
 #include "perlin_noise.h"
 
+Vector2D::Vector2D(){
+    this->x=0;
+    this->y=0;
+}
+Vector2D::Vector2D(double x, double y){
+    this->x=x;
+    this->y=y;
+}
+double Vector2D::getX(){
+    return this->x;
+}
+double Vector2D::getY(){
+    return this->y;
+}
+
+
+
+
+
 double randomDouble(double a, double b) {
     double t {(double)(std::rand())/(double)RAND_MAX}; //random number between 0 and 1
     return a+(b-a)*t;
